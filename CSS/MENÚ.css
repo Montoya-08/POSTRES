@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Agrandir;
+    background-color: #fbd9ea;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-line: underline;
+    color: #e18bbb;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 2px solid #e18bbb;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: white;
+}
+  
+.buscador input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    font-family: Agrandir;
+    border-radius: 30px;
+}
+  
+.buscador button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 10px;
+    color: #e18bbb;
+    transition: color 0.3s ease;
+}
+  
+.buscador button:hover {
+    color: #efabcb;
+}
+
+@media (max-width: 480px) {
+    .buscador {
+      max-width: 90%;
+    }
+  
+    .buscador input[type="text"] {
+      font-size: 14px;
+    }
+  
+    .buscador button {
+      font-size: 18px;
+    }
+}
+  
+.card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: #e18bbb solid;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.card1{
+    width: 250px;
+    height: 300px;
+    background: #e18bbb;
+    border-radius: 8px;
+    flex: 1 250px;
+    max-width: 300px;
+}
+
+.card h2 {
+    padding: 10px;
+    position: absolute;
+    justify-items: start;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-line: underline;
+    color: #e18bbb;
+    justify-items: center;
+}
+
+.card p {
+    grid-template-columns: min-content;
+    justify-content: right;
+    margin: 50px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+}

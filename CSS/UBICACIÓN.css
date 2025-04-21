@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Agrandir;
+    background-color: #fbd9ea;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-line: underline;
+    color: #e18bbb;
+}
+
+.card {
+    display: grid;
+    margin: 50px;
+    padding: 10px;
+    border: #e18bbb solid;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-line: underline;
+    color: #e18bbb;
+}
+
+.card p {
+    margin: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.card iframe {
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        margin: 100px;
+        padding: 20px;
+    }
+
+    .card p,
+    .card h2 {
+        font-size: x-large;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 50px 20px;
+        padding: 15px;
+    }
+
+    .card p,
+    .card h2 {
+        font-size: large;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    .card iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .card p,
+    .card h2 {
+        font-size: medium;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .card iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
